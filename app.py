@@ -4,7 +4,7 @@ import plotly.express as px
 
 # 1. Sayfa Ayarları ve Başlık
 st.set_page_config(page_title="Dijital Pazarlama Analitiği", layout="wide")
-st.title("🚀 Dijital Pazarlama ve Bütçe Optimizasyonu Panosu")
+st.title("Dijital Pazarlama ve Bütçe Optimizasyonu Panosu")
 st.markdown("Bu interaktif panel, markaların dijital reklam kampanyalarını analiz ederek bütçe optimizasyonu sağlamak için veri bilimi ile hazırlanmıştır.")
 
 # 2. Veriyi Yükleme (Sunucuyu yormamak için cache kullanıyoruz)
@@ -20,7 +20,7 @@ def load_data():
 df = load_data()
 
 # 3. Web Sitesi İçin Sekmeler (Tabs) Oluşturma
-tab1, tab2, tab3 = st.tabs(["📊 Genel Bakış", "🌍 Zaman ve Coğrafya", "🤖 Gelecek Tahmini"])
+tab1, tab2, tab3 = st.tabs(["Genel Bakış", "Zaman ve Coğrafya", "Gelecek Tahmini"])
 
 with tab1:
     st.header("Reklam Kanallarına Göre Ortalama Yatırım Getirisi (ROI)")
